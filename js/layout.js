@@ -1,24 +1,24 @@
 ﻿/* ============================================================
-   LAYOUT.JS â€” Shared navbar + footer injection
+   LAYOUT.JS — Shared navbar + footer injection
    ============================================================ */
 
 const NAV_HTML = `
 <nav class="navbar" id="mainNav">
   <div class="container">
     <div class="navbar__inner">
-      <a href="index.html" class="navbar__logo">
-        <img src="public/images/logo.png" alt="Marital Transformative Consult" style="height:52px;width:auto;display:block">
+      <a href="/index.html" class="navbar__logo">
+        <img src="/public/images/logo.png" alt="Marital Transformative Consult" style="height:52px;width:auto;display:block">
       </a>
       <nav class="navbar__nav" aria-label="Main navigation">
-        <a href="index.html" class="navbar__link" data-page="index">Home</a>
-        <a href="about.html" class="navbar__link" data-page="about">About Us</a>
-        <a href="services.html" class="navbar__link" data-page="services">Services</a>
-        <a href="blog.html" class="navbar__link" data-page="blog">Blog</a>
-        <a href="faq.html" class="navbar__link" data-page="faq">FAQ</a>
-        <a href="contact.html" class="navbar__link" data-page="contact">Contact</a>
+        <a href="/index.html" class="navbar__link" data-page="index">Home</a>
+        <a href="/about.html" class="navbar__link" data-page="about">About Us</a>
+        <a href="/services.html" class="navbar__link" data-page="services">Services</a>
+        <a href="/blog.html" class="navbar__link" data-page="blog">Blog</a>
+        <a href="/faq.html" class="navbar__link" data-page="faq">FAQ</a>
+        <a href="/contact.html" class="navbar__link" data-page="contact">Contact</a>
       </nav>
       <div class="navbar__actions">
-        <a href="booking.html" class="btn btn-primary">Book a Session</a>
+        <a href="/booking.html" class="btn btn-primary">Book a Session</a>
         <button class="navbar__hamburger" id="hamburgerBtn" aria-label="Open menu" aria-expanded="false">
           <span></span><span></span><span></span>
         </button>
@@ -30,19 +30,19 @@ const NAV_HTML = `
 <div class="mobile-drawer" id="mobileDrawer" role="dialog" aria-modal="true" aria-label="Navigation menu">
   <div class="drawer-scrim" id="drawerScrim"></div>
   <div class="drawer-panel" id="drawerPanel">
-    <a href="index.html">
-      <img src="public/images/logo.png" alt="Marital Transformative Consult" style="height:48px;width:auto;display:block">
+    <a href="/index.html">
+      <img src="/public/images/logo.png" alt="Marital Transformative Consult" style="height:48px;width:auto;display:block">
     </a>
     <nav class="drawer-nav" aria-label="Mobile navigation">
-      <a href="index.html" data-page="index">Home</a>
-      <a href="about.html" data-page="about">About Us</a>
-      <a href="services.html" data-page="services">Services</a>
-      <a href="blog.html" data-page="blog">Blog</a>
-      <a href="faq.html" data-page="faq">FAQ</a>
-      <a href="contact.html" data-page="contact">Contact</a>
+      <a href="/index.html" data-page="index">Home</a>
+      <a href="/about.html" data-page="about">About Us</a>
+      <a href="/services.html" data-page="services">Services</a>
+      <a href="/blog.html" data-page="blog">Blog</a>
+      <a href="/faq.html" data-page="faq">FAQ</a>
+      <a href="/contact.html" data-page="contact">Contact</a>
     </nav>
     <div class="drawer-cta">
-      <a href="booking.html" class="btn btn-primary btn-full btn-lg">Book a Session</a>
+      <a href="/booking.html" class="btn btn-primary btn-full btn-lg">Book a Session</a>
     </div>
   </div>
 </div>
@@ -54,7 +54,7 @@ const FOOTER_HTML = `
     <div class="footer__grid">
       <div>
         <div class="footer__logo">
-          <img src="public/images/logo.png" alt="Marital Transformative Consult" style="height:56px;width:auto;display:block;filter:brightness(0) invert(1)">
+          <img src="/public/images/logo.png" alt="Marital Transformative Consult" style="height:56px;width:auto;display:block;filter:brightness(0) invert(1)">
         </div>
         <p class="footer__about">Faith-based professional marital counselling helping couples rebuild, strengthen, and transform their marriages through God's wisdom.</p>
         <div class="footer__social">
@@ -72,23 +72,23 @@ const FOOTER_HTML = `
       <div>
         <div class="footer__heading">Quick Links</div>
         <ul class="footer__links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="services.html">Our Services</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li><a href="faq.html">FAQ</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/about.html">About Us</a></li>
+          <li><a href="/services.html">Our Services</a></li>
+          <li><a href="/blog.html">Blog</a></li>
+          <li><a href="/faq.html">FAQ</a></li>
+          <li><a href="/contact.html">Contact Us</a></li>
         </ul>
       </div>
       <div>
         <div class="footer__heading">Our Services</div>
         <ul class="footer__links">
-          <li><a href="booking.html?service=Premarital+Counselling">Premarital Counselling</a></li>
-          <li><a href="booking.html?service=Couples+Therapy">Couples Therapy</a></li>
-          <li><a href="booking.html?service=Crisis+Intervention">Crisis Intervention</a></li>
-          <li><a href="booking.html?service=Family+Restoration">Family Restoration</a></li>
-          <li><a href="booking.html?service=Individual+Support">Individual Support</a></li>
-          <li><a href="booking.html?service=Faith+Integration">Faith Integration</a></li>
+          <li><a href="/booking.html?service=Premarital+Counselling">Premarital Counselling</a></li>
+          <li><a href="/booking.html?service=Couples+Therapy">Couples Therapy</a></li>
+          <li><a href="/booking.html?service=Crisis+Intervention">Crisis Intervention</a></li>
+          <li><a href="/booking.html?service=Family+Restoration">Family Restoration</a></li>
+          <li><a href="/booking.html?service=Individual+Support">Individual Support</a></li>
+          <li><a href="/booking.html?service=Faith+Integration">Faith Integration</a></li>
         </ul>
       </div>
       <div>
@@ -125,8 +125,8 @@ const FOOTER_HTML = `
     <div class="footer__bottom">
       <p>&copy; ${new Date().getFullYear()} Marital Transformative Consult. All rights reserved.</p>
       <div class="footer__bottom-links">
-        <a href="privacy.html">Privacy Policy</a>
-        <a href="privacy.html#terms">Terms of Service</a>
+        <a href="/privacy.html">Privacy Policy</a>
+        <a href="/privacy.html#terms">Terms of Service</a>
       </div>
     </div>
   </div>

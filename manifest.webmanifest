@@ -8,9 +8,9 @@
   "background_color": "#F8F4EF",
   "icons": [
     {
-      "src": "favicon.svg",
-      "sizes": "any",
-      "type": "image/svg+xml",
+      "src": "public/images/favicon.png",
+      "sizes": "248x300",
+      "type": "image/png",
       "purpose": "any maskable"
     }
   ]

@@ -1,0 +1,22 @@
+{
+  "name": "marital-transformative-website",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "build": "eleventy",
+    "serve": "eleventy --serve",
+    "seed": "node scripts/seed-sanity.mjs"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@sanity/client": "^6.0.0",
+    "dotenv": "^17.4.2",
+    "gray-matter": "^4.0.3",
+    "markdown-it": "^14.0.0"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.0.0"
+  }
+}

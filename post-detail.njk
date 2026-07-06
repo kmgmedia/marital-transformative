@@ -1,0 +1,147 @@
+---
+pagination:
+  data: posts
+  size: 1
+  alias: post
+permalink: "{{ post.url }}"
+eleventyExcludeFromCollections: true
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ post.title }} | Marital Transformative Consult</title>
+  <meta name="description" content="{{ post.description }}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="icon" type="image/png" href="/public/images/favicon.png">
+  <link rel="apple-touch-icon" href="/public/images/favicon.png">
+  <link rel="manifest" href="/manifest.webmanifest">
+  <link rel="canonical" href="https://www.maritaltransformative.org{{ post.url }}">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Marital Transformative Consult">
+  <meta property="og:title" content="{{ post.title }} | Marital Transformative Consult">
+  <meta property="og:description" content="{{ post.description }}">
+  <meta property="og:url" content="https://www.maritaltransformative.org{{ post.url }}">
+  <meta property="og:image" content="{{ post.heroImage }}">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ post.title }} | Marital Transformative Consult">
+  <meta name="twitter:description" content="{{ post.description }}">
+  <meta name="twitter:image" content="{{ post.heroImage }}">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "{{ post.title }}",
+    "description": "{{ post.description }}",
+    "author": {"@type": "Person","name": "{{ post.author }}"},
+    "publisher": {
+      "@type": "Organization",
+      "name": "Marital Transformative Consult",
+      "logo": {"@type": "ImageObject","url": "https://www.maritaltransformative.org/public/images/logo.png"}
+    },
+    "datePublished": "{{ post.date | isoDate }}",
+    "url": "https://www.maritaltransformative.org{{ post.url }}"
+  }
+  </script>
+</head>
+<body data-page="blog">
+
+<div id="nav-placeholder"></div>
+
+<!-- PAGE HERO -->
+<section class="page-hero page-hero--post">
+  <div class="container">
+    <div class="page-hero__inner">
+      <div class="breadcrumb">
+        <a href="/index.html">Home</a>
+        <span class="breadcrumb__sep">/</span>
+        <a href="/blog.html">Blog</a>
+        <span class="breadcrumb__sep">/</span>
+        <span>{{ post.title }}</span>
+      </div>
+      <span class="blog-card__tag post-hero-tag">{{ post.categoryLabel }}</span>
+      <h1 class="text-white post-hero-title" data-animate>{{ post.title }}</h1>
+      <div class="post-meta" data-animate data-animate-delay="1">
+        <div class="post-meta__author">
+          <div class="post-meta__avatar">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="5" fill="rgba(255,255,255,.6)"/><path d="M3 21c0-6.6 4-12 9-12s9 5.4 9 12" fill="rgba(255,255,255,.3)"/></svg>
+          </div>
+          <span class="post-meta__name">{{ post.author }}</span>
+        </div>
+        <span class="post-meta__sep">·</span>
+        <span class="post-meta__date">{{ post.date | readableDate }}</span>
+        <span class="post-meta__sep">·</span>
+        <span class="post-meta__read">{{ post.readTime }} min read</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ARTICLE -->
+<section class="section bg-parchment">
+  <div class="container">
+    <div class="post-body" data-animate>
+
+      <div class="post-hero-img">
+        <img src="{{ post.heroImage }}" alt="{{ post.heroImageAlt }}" loading="lazy">
+      </div>
+
+      {{ post.bodyHtml | safe }}
+
+      <!-- Author card -->
+      <div class="author-card">
+        <div class="author-card__photo author-card__photo--img">
+          <img src="{{ post.authorPhoto }}" alt="{{ post.author }}" loading="lazy">
+        </div>
+        <div>
+          <div class="author-card__name">{{ post.author }}</div>
+          <div class="author-card__role">{{ post.authorRole }}</div>
+          <p class="author-card__bio">{{ post.authorBio }}</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Related articles -->
+    <div class="related-articles" data-animate>
+      <h3 class="related-articles__heading">Related Articles</h3>
+      <div class="grid-3 related-grid">
+        {% for related in posts | getRelatedPosts(post.url, 3) %}
+        <div class="blog-card">
+          <div class="blog-card__img blog-card__img--sm">
+            <img src="{{ related.heroImage }}" alt="{{ related.heroImageAlt }}" loading="lazy">
+          </div>
+          <div class="blog-card__body">
+            <span class="blog-card__tag">{{ related.categoryLabel }}</span>
+            <h4 class="blog-card__title blog-card__title--sm"><a href="{{ related.url }}">{{ related.title }}</a></h4>
+            <a href="{{ related.url }}" class="blog-card__read-link">Read Article</a>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-strip">
+  <div class="container">
+    <div data-animate>
+      <h2>Is Your Marriage Going Through a Crisis?</h2>
+      <p>You don't have to navigate this alone. Our counsellors are here to help you find a way forward.</p>
+      <div class="actions">
+        <a href="/booking.html" class="btn btn-white btn-lg">Book a Consultation</a>
+        <a href="/contact.html" class="btn btn-outline-white btn-lg">Talk to Us First</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div id="footer-placeholder"></div>
+<script src="/js/layout.js"></script>
+<script src="/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+---
+permalink: blog.html
+eleventyExcludeFromCollections: true
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog | Marital Transformative Consult</title>
+  <meta name="description" content="Marriage insights, biblical wisdom and practical tips from the Marital Transformative Consult team.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="icon" type="image/png" href="/public/images/favicon.png">
+  <link rel="apple-touch-icon" href="/public/images/favicon.png">
+  <link rel="manifest" href="/manifest.webmanifest">
+  <link rel="canonical" href="https://www.maritaltransformative.org/blog.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Marital Transformative Consult">
+  <meta property="og:title" content="Blog | Marital Transformative Consult">
+  <meta property="og:description" content="Marriage insights, biblical wisdom and practical tips from the Marital Transformative Consult team.">
+  <meta property="og:url" content="https://www.maritaltransformative.org/blog.html">
+  <meta property="og:image" content="https://www.maritaltransformative.org/public/images/logo.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Blog | Marital Transformative Consult">
+  <meta name="twitter:description" content="Marriage insights, biblical wisdom and practical tips from the Marital Transformative Consult team.">
+  <meta name="twitter:image" content="https://www.maritaltransformative.org/public/images/logo.png">
+</head>
+<body data-page="blog">
+
+<div id="nav-placeholder"></div>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="container">
+    <div class="page-hero__inner">
+      <div class="breadcrumb">
+        <a href="/index.html">Home</a>
+        <span class="breadcrumb__sep">/</span>
+        <span>Blog</span>
+      </div>
+      <h1 class="text-white" data-animate>Marriage Insights &amp; Resources</h1>
+      <p class="body-l page-hero__sub--blog" data-animate data-animate-delay="1">
+        Practical wisdom, biblical encouragement and expert guidance for every stage of your marriage.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- BLOG GRID -->
+<section class="section bg-parchment">
+  <div class="container">
+
+    <!-- Filter -->
+    <div class="filter-bar" data-animate>
+      <button type="button" class="filter-btn active" data-filter="all">All Articles</button>
+      <button type="button" class="filter-btn" data-filter="marriage">Marriage</button>
+      <button type="button" class="filter-btn" data-filter="communication">Communication</button>
+      <button type="button" class="filter-btn" data-filter="healing">Healing &amp; Restoration</button>
+      <button type="button" class="filter-btn" data-filter="family">Family</button>
+    </div>
+
+    <div class="grid-3">
+      {% for post in posts %}
+      <div class="blog-card" data-category="{{ post.category }}" data-animate data-animate-delay="{{ (loop.index0 % 3) + 1 }}">
+        <div class="blog-card__img">
+          <img src="{{ post.heroImage }}" alt="{{ post.heroImageAlt }}" loading="lazy">
+        </div>
+        <div class="blog-card__body">
+          <span class="blog-card__tag">{{ post.categoryLabel }}</span>
+          <h3 class="blog-card__title"><a href="{{ post.url }}">{{ post.title }}</a></h3>
+          <p class="blog-card__excerpt">{{ post.description }}</p>
+          <div class="blog-card__meta">
+            <span><span class="blog-card__author">{{ post.author }}</span> · {{ post.readTime }} min read</span>
+            <a href="{{ post.url }}" class="blog-card__read-link">Read</a>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- NEWSLETTER -->
+<section class="newsletter">
+  <div class="container">
+    <div data-animate>
+      <h2>Never Miss an Article</h2>
+      <p>Subscribe to receive our latest marriage insights and resources straight to your inbox.</p>
+      <form class="newsletter__form" novalidate>
+        <input type="email" class="newsletter__input" placeholder="Your email address" aria-label="Email address">
+        <button type="submit" class="newsletter__btn">Subscribe</button>
+      </form>
+      <p class="newsletter__note">Weekly emails. No spam. Unsubscribe anytime.</p>
+    </div>
+  </div>
+</section>
+
+<div id="footer-placeholder"></div>
+<script src="/js/layout.js"></script>
+<script src="/js/main.js"></script>
+</body>
+</html>
