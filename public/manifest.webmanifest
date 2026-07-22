@@ -1,0 +1,17 @@
+{
+  "name": "Marital Transformative Consult",
+  "short_name": "MTC",
+  "description": "Professional faith-based marital counselling in Nigeria.",
+  "start_url": "/",
+  "display": "browser",
+  "theme_color": "#0C2481",
+  "background_color": "#F8F4EF",
+  "icons": [
+    {
+      "src": "/images/favicon.png",
+      "sizes": "248x300",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

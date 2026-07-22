@@ -1,0 +1,154 @@
+import Link from "next/link";
+import { SITE_URL } from "@/lib/site";
+
+export const metadata = {
+  title: "Privacy Policy & Terms of Service",
+  description: "Privacy Policy and Terms of Service for Marital Transformative Consult.",
+  alternates: { canonical: `${SITE_URL}/privacy` },
+  openGraph: {
+    title: "Privacy Policy & Terms of Service | Marital Transformative Consult",
+    description: "Privacy Policy and Terms of Service for Marital Transformative Consult.",
+    url: `${SITE_URL}/privacy`
+  },
+  twitter: {
+    title: "Privacy Policy & Terms of Service | Marital Transformative Consult",
+    description: "Privacy Policy and Terms of Service for Marital Transformative Consult."
+  }
+};
+
+export default function PrivacyPage() {
+  return (
+    <>
+      <section className="page-hero page-hero--sm">
+        <div className="container">
+          <div className="page-hero__inner">
+            <div className="breadcrumb">
+              <Link href="/">Home</Link>
+              <span className="breadcrumb__sep">/</span>
+              <span>Privacy Policy</span>
+            </div>
+            <h1 className="text-white" data-animate="">Privacy Policy &amp; Terms of Service</h1>
+            <p className="privacy-hero__sub">Last updated: June 2025</p>
+          </div>
+        </div>
+      </section>
+
+      <section className="section bg-parchment">
+        <div className="container">
+          <div className="policy-body" data-animate="">
+            <h2>Privacy Policy</h2>
+            <p>
+              Marital Transformative Consult (&quot;we&quot;, &quot;us&quot;, &quot;our&quot;) is committed to
+              protecting the privacy and confidentiality of all clients and website visitors. This Privacy Policy
+              explains how we collect, use, store and protect your personal information.
+            </p>
+
+            <h2>Information We Collect</h2>
+            <p>
+              We may collect the following types of information when you use our website or services: your name,
+              email address, phone number and any details you voluntarily provide through our contact or booking
+              forms. We do not automatically collect sensitive personal data without your explicit consent.
+            </p>
+
+            <h2>How We Use Your Information</h2>
+            <p>
+              Information you provide is used solely to: respond to your enquiries, confirm and manage your
+              appointments, send relevant resources or newsletters (only with your consent), and improve our
+              services. We will never sell, trade or share your personal information with third parties for
+              marketing purposes.
+            </p>
+
+            <h2>Counselling Confidentiality</h2>
+            <p>
+              All information shared during counselling sessions is strictly confidential and protected by
+              professional ethics. Your session content will not be disclosed to any third party — including family
+              members, employers or church leaders — without your explicit written consent. The sole exception is
+              where we are legally required to disclose information to prevent serious harm.
+            </p>
+
+            <h2>Data Security</h2>
+            <p>
+              We take all reasonable measures to protect your data from unauthorised access, disclosure or misuse.
+              Our website uses HTTPS encryption and we store client records securely. Only authorised counselling
+              staff have access to client information.
+            </p>
+
+            <h2>Cookies</h2>
+            <p>
+              Our website may use essential cookies to ensure it functions correctly. We do not use advertising or
+              tracking cookies. You can control cookie settings through your browser.
+            </p>
+
+            <h2>Your Rights</h2>
+            <p>
+              You have the right to access, correct or request deletion of personal information we hold about you.
+              To exercise these rights, please contact us at{" "}
+              <a href="mailto:info@maritaltransformative.org" className="privacy-link">info@maritaltransformative.org</a>.
+            </p>
+
+            <h2>Contact</h2>
+            <p>
+              For any privacy-related enquiries, please contact us at{" "}
+              <a href="mailto:info@maritaltransformative.org" className="privacy-link">info@maritaltransformative.org</a>{" "}
+              or call +234 801 234 5678.
+            </p>
+
+            <h2 id="terms" className="privacy-terms-h2">Terms of Service</h2>
+
+            <p>
+              By accessing this website and using our services, you agree to the following terms. If you do not
+              agree, please do not use our website or services.
+            </p>
+
+            <h2>Services</h2>
+            <p>
+              Marital Transformative Consult provides professional faith-based marital counselling services. Our
+              services are not a substitute for emergency psychological or medical care. If you or someone you know
+              is in immediate danger, please contact emergency services immediately.
+            </p>
+
+            <h2>Appointments</h2>
+            <p>
+              We ask that clients provide at least 24 hours&apos; notice when cancelling or rescheduling a session.
+              Late cancellations or no-shows may be subject to a cancellation fee at our counsellors&apos;
+              discretion.
+            </p>
+
+            <h2>Online Sessions</h2>
+            <p>
+              Clients accessing sessions via video call are responsible for ensuring they have a private, secure
+              environment. Recording of sessions in any form is strictly prohibited without the written consent of
+              all parties.
+            </p>
+
+            <h2>Website Content</h2>
+            <p>
+              All content on this website — including articles, resources and materials — is the intellectual
+              property of Marital Transformative Consult and is protected by copyright. You may not reproduce,
+              distribute or republish any content without our written permission.
+            </p>
+
+            <h2>Limitation of Liability</h2>
+            <p>
+              Marital Transformative Consult will not be liable for any indirect, incidental or consequential
+              damages arising from the use of this website or our services. Our liability is limited to the fees
+              paid for the specific service in question.
+            </p>
+
+            <h2>Changes to These Terms</h2>
+            <p>
+              We reserve the right to update these terms at any time. The most current version will always be
+              available on this page. Continued use of our services after changes constitutes acceptance of the
+              updated terms.
+            </p>
+
+            <p className="privacy-footer-p">
+              &copy; 2025 Marital Transformative Consult. All rights reserved. Lagos, Nigeria. &nbsp;|&nbsp;
+              <a href="mailto:info@maritaltransformative.org" className="privacy-link">info@maritaltransformative.org</a>
+            </p>
+          </div>
+        </div>
+      </section>
+    </>
+  );
+}
