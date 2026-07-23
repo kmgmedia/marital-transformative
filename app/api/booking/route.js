@@ -1,4 +1,4 @@
-import { verifyRecaptcha, isHoneypotTripped, postToFormspree } from "@/lib/formHandler";
+import { verifyRecaptcha, isHoneypotTripped, sendFormEmail } from "@/lib/formHandler";
 
 const REQUIRED_FIELDS = ["firstName", "lastName", "email", "phone", "service"];
 
@@ -24,7 +24,7 @@ export async function POST(request) {
   }
 
   try {
-    await postToFormspree(fields, "New booking request from website");
+    await sendFormEmail(fields, "New booking request from website");
   } catch (err) {
     return Response.json({ ok: false, error: "submission_failed" }, { status: 502 });
   }

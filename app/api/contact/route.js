@@ -1,4 +1,4 @@
-import { verifyRecaptcha, isHoneypotTripped, postToFormspree } from "@/lib/formHandler";
+import { verifyRecaptcha, isHoneypotTripped, sendFormEmail } from "@/lib/formHandler";
 
 const REQUIRED_FIELDS = ["name", "email", "subject", "message"];
 
@@ -21,7 +21,7 @@ export async function POST(request) {
   }
 
   try {
-    await postToFormspree(fields, "New message from website contact form");
+    await sendFormEmail(fields, "New message from website contact form");
   } catch (err) {
     return Response.json({ ok: false, error: "submission_failed" }, { status: 502 });
   }

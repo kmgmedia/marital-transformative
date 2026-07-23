@@ -8,12 +8,12 @@ Every page lives under `app/` as a React Server Component with its own `metadata
 
 The **blog** is different: posts are written and edited in **Sanity** (a hosted CMS with a web-based writing studio). `lib/sanity.js` fetches them — at build time for `generateStaticParams`, and refreshed hourly via ISR (`export const revalidate = 3600`) so new posts show up without a full redeploy.
 
-The **contact/booking forms** POST to `app/api/contact` and `app/api/booking` (Next.js Route Handlers), which verify the reCAPTCHA token server-side and relay the submission to Formspree — the Formspree ID and reCAPTCHA secret never reach the browser.
+The **contact/booking forms** POST to `app/api/contact` and `app/api/booking` (Next.js Route Handlers), which verify the reCAPTCHA token server-side and email the submission via Resend — the Resend API key and reCAPTCHA secret never reach the browser.
 
 ```
 marital-transformative-website/
 ├── app/                    pages (Server Components), layout, API routes, sitemap.js, robots.js
-│   ├── api/contact/, api/booking/   form submission handlers (reCAPTCHA verify + Formspree relay)
+│   ├── api/contact/, api/booking/   form submission handlers (reCAPTCHA verify + Resend email)
 │   ├── blog/, blog/[slug]/          blog list + post detail (Sanity-backed)
 │   └── layout.jsx, globals.css      shared chrome + design system
 ├── components/             Navbar, Footer, forms, cards, etc. ("use client" where interactive)
@@ -35,7 +35,7 @@ cp .env.example .env
 Fill in `.env` (see comments in `.env.example` for what's server-only vs. `NEXT_PUBLIC_`):
 - `SANITY_PROJECT_ID` / `SANITY_DATASET` — from [sanity.io/manage](https://sanity.io/manage)
 - `SANITY_WRITE_TOKEN` — only needed once, to run the seed script (Editor/Write permissions)
-- `FORMSPREE_FORM_ID` — for the contact/booking forms to actually send
+- `RESEND_API_KEY` / `CONTACT_TO_EMAIL` — for the contact/booking forms to actually send (requires verifying a sending domain in Resend)
 - `NEXT_PUBLIC_GA_MEASUREMENT_ID` — optional, omits the GA snippet entirely if blank
 - `NEXT_PUBLIC_RECAPTCHA_SITE_KEY` / `RECAPTCHA_SECRET_KEY` — optional, omits the reCAPTCHA widget entirely if blank
 
@@ -63,4 +63,4 @@ Both commands require logging in with your Sanity account. Once a post is saved 
 
 ## Deploying
 
-Deployed on Vercel with zero-config Next.js detection (no `vercel.json` needed). Vercel's project settings need `SANITY_PROJECT_ID`, `SANITY_DATASET`, `FORMSPREE_FORM_ID`, and (optionally) `NEXT_PUBLIC_GA_MEASUREMENT_ID` / `NEXT_PUBLIC_RECAPTCHA_SITE_KEY` / `RECAPTCHA_SECRET_KEY` added as environment variables.
+Deployed on Vercel with zero-config Next.js detection (no `vercel.json` needed). Vercel's project settings need `SANITY_PROJECT_ID`, `SANITY_DATASET`, `RESEND_API_KEY`, `CONTACT_TO_EMAIL`, and (optionally) `RESEND_FROM_EMAIL` / `NEXT_PUBLIC_GA_MEASUREMENT_ID` / `NEXT_PUBLIC_RECAPTCHA_SITE_KEY` / `RECAPTCHA_SECRET_KEY` added as environment variables.
