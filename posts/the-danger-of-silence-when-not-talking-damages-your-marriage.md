@@ -4,12 +4,12 @@ description: "Stonewalling and emotional withdrawal are among the most destructi
 author: "Mrs. Blessing Adeyemi"
 authorRole: "Marriage & Communication Coach, Marital Transformative Consult"
 authorBio: "Mrs. Adeyemi is a certified communication coach with a background in psychology, specialising in helping couples break unhealthy conversational patterns. Her practical, warm coaching style has helped hundreds of Nigerian couples learn to truly hear one another again."
-authorPhoto: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=160&h=160&q=80"
+authorPhoto: "https://images.unsplash.com/photo-1591634616938-1dfa7ee2e617?auto=format&fit=crop&w=160&h=160&q=80"
 date: 2025-05-07
 readTime: 6
 category: communication
 categoryLabel: "Communication"
-heroImage: "https://images.unsplash.com/photo-1494783367193-149034c05e8f?auto=format&fit=crop&w=1200&h=840&q=80"
+heroImage: "https://images.unsplash.com/photo-1515015337340-dbabb1fa63ae?auto=format&fit=crop&w=1200&h=840&q=80"
 heroImageAlt: "The Danger of Silence in Marriage"
 ---
 

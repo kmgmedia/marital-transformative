@@ -183,7 +183,7 @@ export default function HomePage() {
               <div className="img-ring-wrapper">
                 <div className="img-frame img-frame--tall img-frame--forest-bg">
                   <img
-                    src="https://images.unsplash.com/photo-1573497161161-c03ab3627e24?auto=format&fit=crop&w=800&q=80"
+                    src="https://images.unsplash.com/photo-1695281536457-01f9a07c575b?auto=format&fit=crop&w=800&q=80"
                     alt="Marital counselling session"
                     loading="lazy"
                   />

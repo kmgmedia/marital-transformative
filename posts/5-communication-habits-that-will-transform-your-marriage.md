@@ -7,12 +7,12 @@ description: "Poor communication is the root of most marital conflicts. These fi
 author: "Mrs. Blessing Adeyemi"
 authorRole: "Marriage & Communication Coach, Marital Transformative Consult"
 authorBio: "Mrs. Adeyemi is a certified communication coach with a background in psychology, specialising in helping couples break unhealthy conversational patterns. Her practical, warm coaching style has helped hundreds of Nigerian couples learn to truly hear one another again."
-authorPhoto: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=160&h=160&q=80"
+authorPhoto: "https://images.unsplash.com/photo-1591634616938-1dfa7ee2e617?auto=format&fit=crop&w=160&h=160&q=80"
 date: 2025-06-05
 readTime: 6
 category: communication
 categoryLabel: "Communication"
-heroImage: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=1200&h=840&q=80"
+heroImage: "https://images.unsplash.com/photo-1522941471521-6ee21ec5cc26?auto=format&fit=crop&w=1200&h=840&q=80"
 heroImageAlt: "Communication in Marriage"
 ---
 

@@ -170,7 +170,7 @@ export default function AboutPage() {
             <div data-animate="" data-animate-delay="1">
               <div className="about-story-img">
                 <img
-                  src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=800&h=600&q=80"
+                  src="https://images.unsplash.com/photo-1577897113176-6888367369bf?auto=format&fit=crop&w=800&h=600&q=80"
                   alt="Couple in a counselling session"
                   loading="lazy"
                 />

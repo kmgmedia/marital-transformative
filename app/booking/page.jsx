@@ -43,7 +43,7 @@ export default function BookingPage() {
             <div data-animate="left">
               <div className="booking-img">
                 <img
-                  src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=800&h=560&q=80"
+                  src="https://images.unsplash.com/photo-1529519195486-16945f0fb37f?auto=format&fit=crop&w=800&h=560&q=80"
                   alt="Welcoming counselling environment"
                   loading="lazy"
                 />

@@ -399,7 +399,7 @@ img.team-card__photo{display:block}
 /* ── PAGE-SPECIFIC OVERRIDES ─────────────────────────────── */
 
 /* index.html */
-.hero__bg--home{background:linear-gradient(rgba(12,36,129,.82),rgba(12,36,129,.90)),url('https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat}
+.hero__bg--home{background:linear-gradient(rgba(12,36,129,.82),rgba(12,36,129,.90)),url('https://images.unsplash.com/photo-1522941471521-6ee21ec5cc26?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat}
 .intro-quote{max-width:700px;margin:0 auto var(--sp-24)}
 .intro-pillars{display:flex;gap:var(--sp-16);justify-content:center;flex-wrap:wrap}
 .intro-pill{background:var(--white);padding:10px 20px;border-radius:var(--r-pill);box-shadow:var(--shadow-card)}

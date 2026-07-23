@@ -7,12 +7,12 @@ description: "Trust, once broken, feels impossible to rebuild. But countless cou
 author: "Dr. Adebola Williams"
 authorRole: "Lead Counsellor, Marital Transformative Consult"
 authorBio: "Dr. Williams holds an M.Sc. in Family Therapy and has over 12 years of experience helping couples navigate their most challenging seasons. She is passionate about faith-based healing and the power of restored marriages to transform communities."
-authorPhoto: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=160&h=160&q=80"
+authorPhoto: "https://images.unsplash.com/photo-1756588534346-e8899364757b?auto=format&fit=crop&w=160&h=160&q=80"
 date: 2025-06-12
 readTime: 8
 category: healing
 categoryLabel: "Healing & Restoration"
-heroImage: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1200&h=840&q=80"
+heroImage: "https://images.unsplash.com/photo-1515015520803-1a2e0aadb290?auto=format&fit=crop&w=1200&h=840&q=80"
 heroImageAlt: "Rebuilding Trust After a Marital Crisis"
 ---
 

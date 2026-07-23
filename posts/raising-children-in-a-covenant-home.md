@@ -7,12 +7,12 @@ description: "Children thrive in homes where they witness a healthy marriage. Le
 author: "Mr. Emmanuel Nwosu"
 authorRole: "Family Counsellor, Marital Transformative Consult"
 authorBio: "Mr. Nwosu specialises in family systems and the intersection of marriage and parenting. He helps couples build home cultures where children witness — and inherit — a healthy, godly model of marriage."
-authorPhoto: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=160&h=160&q=80"
+authorPhoto: "https://images.unsplash.com/photo-1783012039560-5690190a9b9b?auto=format&fit=crop&w=160&h=160&q=80"
 date: 2025-05-20
 readTime: 5
 category: family
 categoryLabel: "Family"
-heroImage: "https://images.unsplash.com/photo-1503543144555-35ea5ec60e21?auto=format&fit=crop&w=1200&h=840&q=80"
+heroImage: "https://images.unsplash.com/photo-1775688425905-a4539d6160da?auto=format&fit=crop&w=1200&h=840&q=80"
 heroImageAlt: "Raising Children in a Covenant Home"
 ---
 

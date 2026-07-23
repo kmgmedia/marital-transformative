@@ -7,12 +7,12 @@ description: "The patterns you establish in your first twelve months as husband 
 author: "Pastor Grace Okafor"
 authorRole: "Family Life Pastor, Marital Transformative Consult"
 authorBio: "Pastor Okafor leads premarital and newlywed ministry at Marital Transformative Consult, blending pastoral counsel with practical relationship coaching. She has walked hundreds of couples through their first year of marriage and into lasting covenant partnership."
-authorPhoto: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=160&h=160&q=80"
+authorPhoto: "https://images.unsplash.com/photo-1620424037570-15137a4a562d?auto=format&fit=crop&w=160&h=160&q=80"
 date: 2025-05-28
 readTime: 7
 category: marriage
 categoryLabel: "Marriage"
-heroImage: "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=1200&h=840&q=80"
+heroImage: "https://images.unsplash.com/photo-1624228652376-d4faa602b278?auto=format&fit=crop&w=1200&h=840&q=80"
 heroImageAlt: "First Year of Marriage"
 ---
 
