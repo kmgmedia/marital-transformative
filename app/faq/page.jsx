@@ -49,7 +49,7 @@ export default function FaqPage() {
 
           <div className="faq-cta" data-animate="">
             <h3 className="faq-cta__h3">Still Have Questions?</h3>
-            <p className="faq-cta__p">Our team is happy to answer any question you have before you book. Reach out — we&apos;re here for you.</p>
+            <p className="faq-cta__p">Our team is happy to answer any question you have before you book. Reach out; we&apos;re here for you.</p>
             <div className="faq-cta__actions">
               <Link href="/contact" className="btn btn-white">Send Us a Message</Link>
               <a href="https://wa.me/2348012345678" className="btn btn-outline-white" target="_blank" rel="noopener">

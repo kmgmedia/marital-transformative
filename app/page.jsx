@@ -46,7 +46,7 @@ export default function HomePage() {
               Transforming Marriages,<br />Restoring Families
             </h1>
             <p className="hero__body" data-animate="" data-animate-delay="1">
-              Professional counselling rooted in God&apos;s wisdom — helping couples rebuild trust, deepen intimacy,
+              Professional counselling rooted in God&apos;s wisdom, helping couples rebuild trust, deepen intimacy,
               and build marriages that last a lifetime.
             </p>
             <div className="hero__actions" data-animate="" data-animate-delay="2">
@@ -74,7 +74,7 @@ export default function HomePage() {
       <section className="section--sm bg-gold-tint">
         <div className="container text-center">
           <p className="body-l text-forest intro-quote" data-animate="">
-            <em>&quot;A cord of three strands is not quickly broken.&quot; — Ecclesiastes 4:12</em>
+            <em>&quot;A cord of three strands is not quickly broken.&quot; (Ecclesiastes 4:12)</em>
           </p>
           <div className="intro-pillars" data-animate="" data-animate-delay="1">
             <span className="label text-forest intro-pill">✦ Faith-Driven</span>
@@ -137,7 +137,7 @@ export default function HomePage() {
                 <h2>A Safe Space for Every Marriage</h2>
                 <p>
                   We combine professional counselling expertise with deep faith to create a healing environment
-                  where marriages are not just saved — they are transformed.
+                  where marriages are not just saved; they are transformed.
                 </p>
               </div>
               <div className="feature-list">
@@ -193,7 +193,7 @@ export default function HomePage() {
                         &quot;We don&apos;t give up on marriages. We believe every couple deserves a chance at
                         restoration.&quot;
                       </p>
-                      <p className="caption caption--white-faded">— Founder, Marital Transformative Consult</p>
+                      <p className="caption caption--white-faded">Founder, Marital Transformative Consult</p>
                     </div>
                   </div>
                 </div>
@@ -248,7 +248,7 @@ export default function HomePage() {
 
       <NewsletterSection
         heading="Marriage Insights, Delivered Weekly"
-        body="Get practical tips, devotionals, and encouragement for your marriage — straight to your inbox."
+        body="Get practical tips, devotionals, and encouragement for your marriage, straight to your inbox."
         note="We respect your privacy. Unsubscribe at any time."
       />
     </>

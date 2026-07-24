@@ -61,8 +61,8 @@ export default function PrivacyPage() {
             <h2>Counselling Confidentiality</h2>
             <p>
               All information shared during counselling sessions is strictly confidential and protected by
-              professional ethics. Your session content will not be disclosed to any third party — including family
-              members, employers or church leaders — without your explicit written consent. The sole exception is
+              professional ethics. Your session content will not be disclosed to any third party, including family
+              members, employers or church leaders, without your explicit written consent. The sole exception is
               where we are legally required to disclose information to prevent serious harm.
             </p>
 
@@ -123,7 +123,7 @@ export default function PrivacyPage() {
 
             <h2>Website Content</h2>
             <p>
-              All content on this website — including articles, resources and materials — is the intellectual
+              All content on this website, including articles, resources and materials, is the intellectual
               property of Marital Transformative Consult and is protected by copyright. You may not reproduce,
               distribute or republish any content without our written permission.
             </p>

@@ -4,16 +4,16 @@ import { SITE_URL } from "@/lib/site";
 
 export const metadata = {
   title: "Contact Us",
-  description: "Get in touch with Marital Transformative Consult. Call, WhatsApp, email us or fill in the contact form — we're here to help.",
+  description: "Get in touch with Marital Transformative Consult. Call, WhatsApp, email us or fill in the contact form. We're here to help.",
   alternates: { canonical: `${SITE_URL}/contact` },
   openGraph: {
     title: "Contact Us | Marital Transformative Consult",
-    description: "Get in touch with Marital Transformative Consult. Call, WhatsApp, email us or fill in the contact form — we're here to help.",
+    description: "Get in touch with Marital Transformative Consult. Call, WhatsApp, email us or fill in the contact form. We're here to help.",
     url: `${SITE_URL}/contact`
   },
   twitter: {
     title: "Contact Us | Marital Transformative Consult",
-    description: "Get in touch with Marital Transformative Consult. Call, WhatsApp, email us or fill in the contact form — we're here to help."
+    description: "Get in touch with Marital Transformative Consult. Call, WhatsApp, email us or fill in the contact form. We're here to help."
   }
 };
 
@@ -43,7 +43,7 @@ export default function ContactPage() {
               <div className="section-header">
                 <span className="section-label">Get in Touch</span>
                 <h2>We&apos;d Love to Hear From You</h2>
-                <p>Whether you have a question, need more information about our services, or are ready to take the first step — we are here.</p>
+                <p>Whether you have a question, need more information about our services, or are ready to take the first step; we are here.</p>
               </div>
               <div className="contact-info">
                 <div className="contact-row">

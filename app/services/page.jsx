@@ -25,7 +25,7 @@ export const metadata = {
 const steps = [
   {
     title: "Book a Free Consultation",
-    desc: "Fill out our booking form or call/WhatsApp us to schedule a free 30-minute introductory consultation — no obligation."
+    desc: "Fill out our booking form or call/WhatsApp us to schedule a free 30-minute introductory consultation, no obligation."
   },
   {
     title: "Initial Assessment",
@@ -33,7 +33,7 @@ const steps = [
   },
   {
     title: "Counselling Sessions",
-    desc: "Begin regular sessions — weekly or fortnightly — either in-person at our Lagos office or via secure online video call."
+    desc: "Begin regular sessions, weekly or fortnightly, either in-person at our Lagos office or via secure online video call."
   },
   {
     title: "Growth & Follow-Up",

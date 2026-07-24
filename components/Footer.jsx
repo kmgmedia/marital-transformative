@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { FaFacebookF, FaInstagram, FaYoutube, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 
 export default function Footer() {
   const year = new Date().getFullYear();
@@ -22,22 +23,19 @@ export default function Footer() {
               </p>
               <div className="footer__social">
                 <a href="#" className="footer__social-btn" aria-label="Facebook">
-                  <svg viewBox="0 0 24 24">
-                    <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" />
-                  </svg>
+                  <FaFacebookF />
                 </a>
-                <a href="#" className="footer__social-btn" aria-label="Instagram">
-                  <svg viewBox="0 0 24 24">
-                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
-                    <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z" fill="none" stroke="white" strokeWidth="1.5" />
-                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke="white" strokeWidth="2" />
-                  </svg>
+                <a
+                  href="https://www.instagram.com/bamgbosetunji?igsh=ZmNib2Z3ZGZ1Z3lu"
+                  className="footer__social-btn"
+                  aria-label="Instagram"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  <FaInstagram />
                 </a>
                 <a href="#" className="footer__social-btn" aria-label="YouTube">
-                  <svg viewBox="0 0 24 24">
-                    <path d="M22.54 6.42a2.78 2.78 0 00-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 00-1.95 1.96A29 29 0 001 12a29 29 0 00.46 5.58 2.78 2.78 0 001.95 1.95C5.12 20 12 20 12 20s6.88 0 8.59-.47a2.78 2.78 0 001.95-1.95A29 29 0 0023 12a29 29 0 00-.46-5.58z" />
-                    <polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="var(--forest-deep)" />
-                  </svg>
+                  <FaYoutube />
                 </a>
               </div>
             </div>
@@ -78,10 +76,7 @@ export default function Footer() {
               </div>
               <div className="footer__contact-row">
                 <div className="footer__contact-icon">
-                  <svg viewBox="0 0 24 24">
-                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
-                    <polyline points="22,6 12,13 2,6" />
-                  </svg>
+                  <FaEnvelope />
                 </div>
                 <div className="footer__contact-text">
                   <strong>Email</strong>
@@ -90,10 +85,7 @@ export default function Footer() {
               </div>
               <div className="footer__contact-row">
                 <div className="footer__contact-icon">
-                  <svg viewBox="0 0 24 24">
-                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
-                    <circle cx="12" cy="10" r="3" />
-                  </svg>
+                  <FaMapMarkerAlt />
                 </div>
                 <div className="footer__contact-text">
                   <strong>Location</strong>

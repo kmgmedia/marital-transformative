@@ -60,7 +60,7 @@ export default function BookingPage() {
                 </div>
                 <div className="expect-item">
                   <div className="expect-item__dot">2</div>
-                  <p className="expect-item__text"><strong>Free 30-minute consultation:</strong> meet your counsellor, share your situation, ask any questions — no commitment required.</p>
+                  <p className="expect-item__text"><strong>Free 30-minute consultation:</strong> meet your counsellor, share your situation, ask any questions, no commitment required.</p>
                 </div>
                 <div className="expect-item">
                   <div className="expect-item__dot">3</div>
@@ -68,7 +68,7 @@ export default function BookingPage() {
                 </div>
                 <div className="expect-item">
                   <div className="expect-item__dot">4</div>
-                  <p className="expect-item__text"><strong>Begin your sessions</strong> in-person in Lagos or via secure online video — whichever suits your schedule and location.</p>
+                  <p className="expect-item__text"><strong>Begin your sessions</strong> in-person in Lagos or via secure online video, whichever suits your schedule and location.</p>
                 </div>
               </div>
 

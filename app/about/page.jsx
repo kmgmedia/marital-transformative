@@ -7,18 +7,18 @@ import { SITE_URL } from "@/lib/site";
 export const metadata = {
   title: "About Us",
   description:
-    "Learn about Marital Transformative Consult — our mission, vision, values and the team behind Nigeria's trusted faith-based marital counselling service.",
+    "Learn about Marital Transformative Consult, our mission, vision, values and the team behind Nigeria's trusted faith-based marital counselling service.",
   alternates: { canonical: `${SITE_URL}/about` },
   openGraph: {
     title: "About Us | Marital Transformative Consult",
     description:
-      "Learn about Marital Transformative Consult — our mission, vision, values and the team behind Nigeria's trusted faith-based marital counselling service.",
+      "Learn about Marital Transformative Consult, our mission, vision, values and the team behind Nigeria's trusted faith-based marital counselling service.",
     url: `${SITE_URL}/about`
   },
   twitter: {
     title: "About Us | Marital Transformative Consult",
     description:
-      "Learn about Marital Transformative Consult — our mission, vision, values and the team behind Nigeria's trusted faith-based marital counselling service."
+      "Learn about Marital Transformative Consult, our mission, vision, values and the team behind Nigeria's trusted faith-based marital counselling service."
   }
 };
 
@@ -138,7 +138,7 @@ export default function AboutPage() {
             </div>
             <h1 className="text-white" data-animate="">About Marital Transformative Consult</h1>
             <p className="body-l page-hero__sub" data-animate="" data-animate-delay="1">
-              We are passionate believers in the sanctity and transformative power of marriage — and we are here to
+              We are passionate believers in the sanctity and transformative power of marriage, and we are here to
               help yours flourish.
             </p>
           </div>
@@ -158,8 +158,8 @@ export default function AboutPage() {
                 power to restore.
               </p>
               <p className="about-intro__p">
-                For over nine years, we have walked alongside couples at every stage — from those preparing for
-                marriage to those on the brink of divorce — providing professional, faith-rooted counselling that
+                For over nine years, we have walked alongside couples at every stage, from those preparing for
+                marriage to those on the brink of divorce, providing professional, faith-rooted counselling that
                 produces lasting transformation.
               </p>
               <p className="about-intro__p--last">
@@ -176,9 +176,9 @@ export default function AboutPage() {
                 />
               </div>
               <blockquote className="about-blockquote">
-                &quot;We believe marriage is a divine covenant — not a contract to be discarded, but a promise
+                &quot;We believe marriage is a divine covenant, not a contract to be discarded, but a promise
                 worth every effort to keep and honour.&quot;
-                <footer className="about-blockquote__footer">— Founder&apos;s Note</footer>
+                <footer className="about-blockquote__footer">Founder&apos;s Note</footer>
               </blockquote>
             </div>
           </div>
@@ -216,7 +216,7 @@ export default function AboutPage() {
               <div className="label vision-card__label">Our Vision</div>
               <h3 className="vision-card__h3">A Nigeria Where Families Thrive</h3>
               <p className="vision-card__p">
-                To be Nigeria&apos;s most trusted faith-based marital counselling organisation — one that raises a
+                To be Nigeria&apos;s most trusted faith-based marital counselling organisation, one that raises a
                 generation of strong, covenant-honouring marriages that transform communities and leave a godly
                 legacy.
               </p>
@@ -274,7 +274,7 @@ export default function AboutPage() {
 
       <NewsletterSection
         heading="Marriage Insights, Delivered Weekly"
-        body="Practical tips, devotionals and encouragement for your marriage — delivered to your inbox."
+        body="Practical tips, devotionals and encouragement for your marriage, delivered to your inbox."
         note="We respect your privacy. Unsubscribe at any time."
       />
     </>
