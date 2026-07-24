@@ -5,7 +5,6 @@ export default function ServiceCard({ service, animateDelay }) {
     <div className="service-card" data-animate="" data-animate-delay={animateDelay}>
       <div className="service-card__img">
         <img src={service.image} alt={service.title} loading="lazy" />
-        <span className="service-card__num">{service.num}</span>
       </div>
       <div className="service-card__body">
         <p className="service-card__who">{service.who}</p>

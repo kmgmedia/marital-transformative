@@ -1,10 +1,10 @@
 ---
 title: "How to Forgive Your Spouse — and Actually Mean It"
 description: "Forgiveness is not a feeling — it is a decision. And in marriage, it is one of the most powerful tools for lasting healing and reconciliation."
-author: "Dr. Adebola Williams"
-authorRole: "Lead Counsellor, Marital Transformative Consult"
-authorBio: "Dr. Williams holds an M.Sc. in Family Therapy and has over 12 years of experience helping couples navigate their most challenging seasons. She is passionate about faith-based healing and the power of restored marriages to transform communities."
-authorPhoto: "https://images.unsplash.com/photo-1756588534346-e8899364757b?auto=format&fit=crop&w=160&h=160&q=80"
+author: "Rev'd Dr. Tunji Bangbose"
+authorRole: "Senior Pastor & Marriage Counsellor, Marital Transformative Consult"
+authorBio: "Rev'd Dr. Bangbose holds a Ph.D. in Guidance and Counselling Psychology from the University of Lagos and has over three decades of pastoral and teaching experience. He is passionate about faith-based healing and the power of restored marriages to transform communities."
+authorPhoto: "https://res.cloudinary.com/ds2h3iwys/image/upload/v1784902101/maritaltransformative/Rev_d_Dr._Tunji_Bangbose_bwocbo.png"
 date: 2025-05-14
 readTime: 9
 category: healing
